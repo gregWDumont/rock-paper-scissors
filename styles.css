@@ -1,30 +1,79 @@
 * {
-    font-family: "More than human";
+    font-family: "Bebas Neue";
 }
 
 body {
         width: auto;
-        background-color: black;
         color: white;
-        background-image: url("https://images.unsplash.com/photo-1639805860737-825c1554b968?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzN8fGR1ZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+        text-shadow: 3px 3px #bf00ff;
+        background-color: black;
+        background-image: url("https://images.unsplash.com/photo-1533972751724-9135a8410a4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
         background-repeat: no-repeat;
-        background-attachment: fixed;
         background-position: center; 
         background-origin: content-box;
         back
 }
 
 .text-banner {
-    width 100%;
-    padding: 50px;
+    padding-top: 20px;
+    text-align: center;
+    margin: auto 100px;
+}
+
+.text-banner h1 {
+    font-size: 50px;
+    font-family: "More than human"
+}
+
+.text-banner h2 {
+    font-size: 30px;
+}
+
+.choices {
+    padding: 200px 300px;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
+
+.weapon {
+    display: inline-block;
+    border: 5px solid #000000;
+    border-radius: 80px;
+    margin: 1rem;
+    transition: all 0.6s ease;
+}
+
+.weapon img {
+    width: 100px;
+}
+
+#Rock {
+    background-color: #f6c7e8;
+    box-shadow: 5px 7px 8px #ca6bbb;
+}
+
+#Paper {
+    background-color: #ace2e2;
+    box-shadow: 5px 7px 8px #7ad0dc;
+}
+
+#Scissors {
+    background-color: #fdd463;
+    box-shadow: 5px 7px 8px #f86006;
+}
+
+#Rock:hover, #Paper:hover, #Scissors:hover{
+    background-color: #red;
+    cursor: pointer;
+  }
+
 
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 20px;
+    padding: 0px;
     background-color: black;
     text-align: center;
 }
