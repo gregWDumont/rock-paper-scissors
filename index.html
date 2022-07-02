@@ -12,29 +12,29 @@
 </head>
 
 <body>
-
-<!-- first page -->
-    <div class="container" id="startcontainer">
+    <!-- first page -->
+   <!-- <div class="container" id="startcontainer">
         <div class="text-banner">
             <h1></h1>
             <img src="https://images.unsplash.com/photo-1601132359864-c974e79890ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt=""/>
             <h2><strong>Rock, paper, scissors</strong>, quite simple, isn't it?</h2>
         </div>
         <button id="startbutton">Start the game</button> 
-    </div>
+    </div> -->
 
-<!-- game page -->
+    <!-- game page -->
 
-<div class="container" id="endcontainer">
+<!-- <div class="container" id="endcontainer">
     <div class="topcontainer">
         <h1 id="gameh1"></h1>
-    </div>
+    </div> -->
+    <!-- User part -->
     <div class="gamecontainer">    
         <div class="playercontainer">
             <h1 class="playerh1">Player</h1>
             <div class="playerinformation">
                 <div class="playerlogo">
-                    <img class="logo" src="images/user.png">
+                    <img class="logo" src="https://static.wikia.nocookie.net/southpark/images/c/c4/Eric-cartman.png/revision/latest?cb=20180718082504">
                 </div>
                 <div class="playerscore">
                     <p class="score" id="playerScore">Score: 0</p>
@@ -43,7 +43,7 @@
             <div class="choices">
                 <div class="weapon" id="Rock">
                     <p>Rock</p>
-                    <img src="https://res.cloudinary.com/itsellej/image/upload/v1533400143/rock-paper-scissors/paper.png" alt="Rock"/>
+                    <img src="https://res.cloudinary.com/itsellej/image/upload/v1533400140/rock-paper-scissors/rock.png" alt="Rock"/>
                 </div>
                 <div class="weapon" id="Paper">
                     <p>Paper</p>
@@ -55,37 +55,45 @@
                 </div>
             </div>
         </div>
+        <!-- Computer part -->
         <div class="playercontainer">
             <h1 class="playerh1">Robot</h1>
             <div class="playerinformation">
                 <div class="playerlogo">
-                    <img class="logo" src="images/user.png">
+                    <img class="logo" src="https://cdn.icon-icons.com/icons2/1429/PNG/512/icon-robots-16_98547.png">
                 </div>
                 <div class="playerscore">
                     <p class="score" id="computerScore">Score: 0</p>
                 </div>
             </div>
             <div class="choices">
-                <div class="weapon" id="Rock">
+                <div class="weapon" id="RobRock">
                     <p>Rock</p>
-                    <img src="https://res.cloudinary.com/itsellej/image/upload/v1533400143/rock-paper-scissors/paper.png" alt="Rock"/>
+                    <img src="https://res.cloudinary.com/itsellej/image/upload/v1533400140/rock-paper-scissors/rock.png" alt="Rock"/>
                 </div>
-                <div class="weapon" id="Paper">
+                <div class="weapon" id="RobPaper">
                     <p>Paper</p>
                     <img src="https://res.cloudinary.com/itsellej/image/upload/v1533400143/rock-paper-scissors/paper.png" alt="Paper"/>
                 </div>
-                <div class="weapon" id="Scissors">
+                <div class="weapon" id="RobScissors">
                     <p>Scissors</p>
                     <img src="https://res.cloudinary.com/itsellej/image/upload/v1533400144/rock-paper-scissors/scissors.png" alt="Scissors"/>
                 </div>
             </div>
         </div>
-
     </div>
+</div>
+
     <script src="./script.js"></script>
 </body>
 <footer>
     <p>Photo by <a href="https://unsplash.com/@eddie_03?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">eddie</a> on <a href="https://unsplash.com/s/photos/scifiart-%23futuristic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
     <p>The font More Than Human is a creation of Jakob Fischer at www.pizzadude.dk,  all rights reserved.</p>
+    <p>Copyright ©
+    <script>
+      document.write(new Date().getFullYear())
+    </script>
+    Reggr0y
+    </p>
 </footer>
 </html>
