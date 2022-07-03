@@ -4,82 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" src="./styles.css">
     <title>Rock Paper Scissors</title>
 </head>
-
 <body>
     <h1>Rock Paper Scissors</h1>
-    <h2 class="msg"></h2>
-    <div class="gamecontainer"> 
-        <!-- User part -->   
-        <div class="playercontainer">
-            <h1 class="playerh1">Player</h1>
-            <div class="playerinformation">
-                <div class="playerlogo">
-                    <img class="logo" src="https://static.wikia.nocookie.net/southpark/images/c/c4/Eric-cartman.png/revision/latest?cb=20180718082504">
-                </div>
-                <div class="playerscore">
-                    <p class="score" id="playerScore">Score: 0</p>
-                </div>
-            </div>
-            <div class="choices">
-                <div class="weapon rock" id="rock">
-                    <p>Rock</p>
-                    <img src="https://res.cloudinary.com/itsellej/image/upload/v1533400140/rock-paper-scissors/rock.png" alt="Rock"/>
-                </div>
-                <div class="weapon paper" id="paper">
-                    <p>Paper</p>
-                    <img src="https://res.cloudinary.com/itsellej/image/upload/v1533400143/rock-paper-scissors/paper.png" alt="Paper"/>
-                </div>
-                <div class="weapon scissors" id="scissors">
-                    <p>Scissors</p>
-                    <img src="https://res.cloudinary.com/itsellej/image/upload/v1533400144/rock-paper-scissors/scissors.png" alt="Scissors"/>
-                </div>
-            </div>
+    <h2 class="score"></h2>
+    <p class="message"></p>
+    <div class="player-cont">
+        <div id="rock">
+            <p>Rock</p>
+            <img/>
         </div>
-
-        <!-- Computer part -->
-        <div class="playercontainer">
-            <h1 class="playerh1">Robot</h1>
-            <div class="playerinformation">
-                <div class="playerlogo">
-                    <img class="logo" src="https://cdn.icon-icons.com/icons2/1429/PNG/512/icon-robots-16_98547.png">
-                </div>
-                <div class="playerscore">
-                    <p class="score" id="computerScore">Score: 0</p>
-                </div>
-            </div>
-            <div class="choices">
-                <div class="weapon rock" id="robrock">
-                    <p>Rock</p>
-                    <img src="https://res.cloudinary.com/itsellej/image/upload/v1533400140/rock-paper-scissors/rock.png" alt="Rock"/>
-                </div>
-                <div class="weapon paper" id="robpaper">
-                    <p>Paper</p>
-                    <img src="https://res.cloudinary.com/itsellej/image/upload/v1533400143/rock-paper-scissors/paper.png" alt="Paper"/>
-                </div>
-                <div class="weapon scissors" id="robscissors">
-                    <p>Scissors</p>
-                    <img src="https://res.cloudinary.com/itsellej/image/upload/v1533400144/rock-paper-scissors/scissors.png" alt="Scissors"/>
-                </div>
-            </div>
+        <div id="paper">
+            <p>Paper</p>
+            <img/>
+        </div>
+        <div id="scissors">
+            <p>Scissors</p>
+            <img/>
         </div>
     </div>
-</div>
-
-    <script src="./script.js"></script>
+    <div class="player-cont">
+        <div id="rock">
+            <p>Rock</p>
+            <img/>
+        </div>
+        <div id="paper">
+            <p>Paper</p>
+            <img/>
+        </div>
+        <div id="scissors">
+            <p>Scissors</p>
+            <img/>
+        </div>
+    </div>
+    <script src="script.js"></script> 
 </body>
-<footer>
-    <p>The font More Than Human is a creation of Jakob Fischer at www.pizzadude.dk,  all rights reserved.</p>
-    <p>Copyright ©
-    <script>
-      document.write(new Date().getFullYear())
-    </script>
-    Reggr0y
-    </p>
-</footer>
 </html>
