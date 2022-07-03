@@ -111,22 +111,22 @@ body {
     width: 50px;
 }
 
-#Rock {
+.rock {
     background-color: #f6c7e8;
     box-shadow: 5px 7px 8px #ca6bbb;
 }
 
-#Paper {
+.paper {
     background-color: #ace2e2;
     box-shadow: 5px 7px 8px #7ad0dc;
 }
 
-#Scissors {
+.scissors {
     background-color: #fdd463;
     box-shadow: 5px 7px 8px #f86006;
 }
 
-#Rock:hover, #Paper:hover, #Scissors:hover{
+#rock:hover, #paper:hover, #scissors:hover{
     background-color: white;
     cursor: pointer;
   }
