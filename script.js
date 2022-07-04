@@ -7,7 +7,7 @@ if (userName != null) {
 
 //function to get a random computer move
 
-let weapArray = ["rock", "paper", "scissors"];
+let weapArray = ['rock', 'paper', 'scissors'];
 
 function computerPlay() {
     return weapArray[Math.floor(Math.random() * weapArray.length)];
@@ -56,7 +56,7 @@ function playRound(playerSelection, computerSelection)
 {
     computerSelection = computerPlay();
     if (computerScore < 5 || playerScore < 5) {
-        if (playerSelection === computerSelection) {
+        if (playerSelection == computerSelection) {
                 winner = 'Nobody wins';
                 infoResult = "It's a tie";
                 document.getElementById("winner").style.color = "white";
@@ -64,15 +64,19 @@ function playRound(playerSelection, computerSelection)
         else if (
             (playerSelection == 'rock') && (computerSelection == 'paper') ||
             (playerSelection == 'paper') && (computerSelection == 'scissors') ||
-            (playerSelection == 'scissors') && (computerSelection == 'paper')
+            (playerSelection == 'scissors') && (computerSelection == 'rock')
             ) {
                 computerScore++;
                 winner = 'Computer wins';
-                infoResult = 'You lose, ' + playerSelection + ' beats ' + playerSelection;
+                infoResult = 'You lose, ' + computerSelection + ' beats ' + playerSelection;
                 document.getElementById("winner").style.color = "red";
                 document.getElementById("user-img").src = "./user-img/Cartman-loses-Fit2.png";
                 }
-        else {
+        else if (
+            (playerSelection == 'paper') && (computerSelection == 'rock') ||
+            (playerSelection == 'rock') && (computerSelection == 'scissors') ||
+            (playerSelection == 'scissors') && (computerSelection == 'paper')
+        ) {
             playerScore++;
             winner = userName + ' wins';
             infoResult = 'You win, ' + playerSelection + ' beats ' + computerSelection;
