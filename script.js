@@ -68,11 +68,13 @@ function playRound(playerSelection, computerSelection)
                 computerScore++;
                 winner = 'Computer wins';
                 infoResult = 'You lose, ' + playerSelection + ' beats ' + playerSelection;
+                document.getElementById("user-img").src = "./user-img/Cartman-loses-Fit2.png";
                 }
         else {
             playerScore++;
             winner = userName + ' wins';
             infoResult = 'You win, ' + playerSelection + ' beats ' + computerSelection;
+            document.getElementById("user-img").src = "./user-img/Cartman-wins-Fit2.png"
         };
         document.getElementById('winner').innerHTML = winner;
         document.getElementById('message').innerHTML = infoResult;
@@ -94,3 +96,23 @@ function endGame() {
         document.getElementById('winner').innerHTML = ' The computer wins the game'
     }
   }
+
+//Doc style
+
+const style = document.createElement('style');
+style.innerHTML = `
+
+    #user-img {
+        margin: 5px;
+        height: 50px;
+        width: 50px;
+        
+    }
+    
+    #rock:hover, #paper:hover, #scissors:hover{
+        background-color: white;
+        cursor: pointer;
+      }
+
+    `;
+document.head.appendChild(style);
