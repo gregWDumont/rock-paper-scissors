@@ -59,6 +59,7 @@ function playRound(playerSelection, computerSelection)
         if (playerSelection === computerSelection) {
                 winner = 'Nobody wins';
                 infoResult = "It's a tie";
+                document.getElementById("winner").style.color = "white";
         }
         else if (
             (playerSelection == 'rock') && (computerSelection == 'paper') ||
@@ -68,12 +69,14 @@ function playRound(playerSelection, computerSelection)
                 computerScore++;
                 winner = 'Computer wins';
                 infoResult = 'You lose, ' + playerSelection + ' beats ' + playerSelection;
+                document.getElementById("winner").style.color = "red";
                 document.getElementById("user-img").src = "./user-img/Cartman-loses-Fit2.png";
                 }
         else {
             playerScore++;
             winner = userName + ' wins';
             infoResult = 'You win, ' + playerSelection + ' beats ' + computerSelection;
+            document.getElementById("winner").style.color = "green";
             document.getElementById("user-img").src = "./user-img/Cartman-wins-Fit2.png"
         };
         document.getElementById('winner').innerHTML = winner;
@@ -114,5 +117,8 @@ style.innerHTML = `
         cursor: pointer;
       }
 
+    #winner {
+        text-shadow: 4px 5px 0px black;
+    }
     `;
 document.head.appendChild(style);
