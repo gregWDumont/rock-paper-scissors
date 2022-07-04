@@ -9,18 +9,19 @@
     <title>Rock Paper Scissors</title>
 </head>
 
-
 <body>
+    <div class="promptName"></div>
     <div class="text-banner">
         <h1>Rock Paper Scissors</h1>
-        <h2 id="winner"></h2>
-        <p id="message"></p>
+        <h2>Click and play!</h2>
+        <h1 id="winner"></h1>
+        <h2 id="message"></h2>
     </div>
-
+ <!-- player info and buttons selection -->
     <div class="gamecontainer">
             <div class="playercontainer">
                 <div id="playerinfo">
-                    <div id="player-name"></div>
+                    <div id="player-name">Player</div>
                     <img class="playerimg" src="./user-img/Cartman.png" alt="player picture" id="user-img"/>
                     <div id="player-score">Score = 0</div>
                 </div>
@@ -39,6 +40,8 @@
                     </button>
                 </div>
             </div>
+
+<!-- computer info and buttons img -->
         <div class="playercontainer">
             <div id="computer-info">
                 <div id="computer-name">Computer</div>
