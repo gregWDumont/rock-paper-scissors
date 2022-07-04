@@ -12,7 +12,7 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 0px;
-    background-color: whitesmoke;
+    background-color: white;
     color: #6699CC;
     text-align: center;
 }
@@ -25,9 +25,10 @@ footer {
 
 
 .text-banner {
-    padding-top: 20px;
     text-align: center;
-    margin: auto 100px;
+    margin: 0 20%;
+    background-color: rgb(70, 70, 70);
+    padding: 20px;
 }
 
 .text-banner h1 {
@@ -35,7 +36,7 @@ footer {
     font-size: 50px;
     text-align: center;
     text-shadow: 3px 3px #6699CC;
-    font-family: "More than human"
+    font-family: "More than human";
 }
 
 .text-banner h2 {
