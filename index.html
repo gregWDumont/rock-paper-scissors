@@ -4,57 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" src="./styles.css">
-    <link rel="icon" href="./icon-rock-paper-scissors-png.png">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./icon-rock-paper-scissors.png">
     <title>Rock Paper Scissors</title>
 </head>
-<body>
-    <h1>Rock Paper Scissors</h1>
-    <h2 id="winner"></h2>
-    <p id="message"></p>
-    <div class="player-cont">
-        <div id="player-info">
-            <div id="player-name"></div>
-            <img class="playerlogo" src="" alt="player picture"/>
-            <div id="player-score"></div>
-        </div>
-        <div class="weapons">
-            <button class="choice" id="rock">
-                <p id="rock">Rock</p>
-                <img id="rock" src="" alt="Rock Hand"/>
-            </button>
-            <button class="choice" id="paper">
-                <p>Paper</p>
-                <img src="" alt="Paper Hand"/>
-            </button>
-            <button class="choice" id="scissors">
-                <p  src="" alt="Scissors Hand">Scissors</p>
-                <img/>
-            </button>
-        </div>
 
+
+<body>
+    <div class="text-banner">
+        <h1>Rock Paper Scissors</h1>
+        <h2 id="winner"></h2>
+        <p id="message"></p>
     </div>
-    <div class="player-cont">
-        <div id="computer-info">
-            <div id="computer-name">Computer</div>
-            <img src="" alt="player picture"/>
-            <div id="computer-score"></div>
-        </div>
-        <div class="weapons">
-            <div>
-                <p>Rock</p>
-                <img/>
+
+    <div class="gamecontainer">
+            <div class="playercontainer">
+                <div id="playerinfo">
+                    <div id="player-name"></div>
+                    <img class="playerimg" src="./user-img/Cartman.png" alt="player picture" id="user-img"/>
+                    <div id="player-score">Score = 0</div>
+                </div>
+                <div class="choices">
+                    <button class="weapon rock" id="rock">
+                        <p id="rock">Rock</p>
+                        <img id="rock" src="./Weapons/rock.png" alt="Rock Hand"/>
+                    </button>
+                    <button class="weapon paper" id="paper">
+                        <p>Paper</p>
+                        <img src="./Weapons/paper.png" alt="Paper Hand"/>
+                    </button>
+                    <button class="weapon scissors" id="scissors">
+                        <p>Scissors</p>
+                        <img src="./Weapons/scissors.png" alt="Scissors Hand"/>
+                    </button>
+                </div>
             </div>
-            <div id="paper">
-                <p>Paper</p>
-                <img  src="" alt="Paper Hand"/>
+        <div class="playercontainer">
+            <div id="computer-info">
+                <div id="computer-name">Computer</div>
+                <img class="playerimg" src="./computer-img.png" alt="player picture"/>
+                <div id="computer-score">Score = 0</div>
             </div>
-            <div id="scissors">
-                <p>Scissors</p>
-                <img/>
+            <div class="choices">
+                <button class="weapon rock">
+                    <p>Rock</p>
+                    <img src="./Weapons/rock.png"/>
+                </button>
+                <button class="weapon paper">
+                    <p>Paper</p>
+                    <img  src="./Weapons/paper.png" alt="Paper Hand"/>
+                </button>
+                <button  class="weapon scissors">
+                    <p>Scissors</p>
+                    <img src="./Weapons/scissors.png" />
+                </button>
             </div>
         </div>
     </div>
-    <script src="script.js"></script> 
+    <script src="script.js" ></script> 
 </body>
+<footer>
+    <p>The font More Than Human is a creation of Jakob Fischer at www.pizzadude.dk,  all rights reserved.</p>
+    <p>Copyright ©
+    <script>
+      document.write(new Date().getFullYear())
+    </script>
+    Reggr0y
+    </p>
+    <p>Find out more about this project and more <a href="https://github.com/Reggr0y/rock-paper-scissors" target="_blank">here</a></p>
+</footer>
 </html>
