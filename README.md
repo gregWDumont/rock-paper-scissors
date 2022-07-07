@@ -1,6 +1,6 @@
 #Project: Rock Paper Scissors
 
-Simple implementation of Rock Paper Scissors game from The Odin Project [curriculum](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors).
+Simple implementation of Rock Paper Scissors game from The Odin Project 'foundation' [curriculum](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors).
 
 Live demo : [here](https://reggr0y.github.io/rock-paper-scissors/)!
 
