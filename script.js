@@ -108,13 +108,17 @@ function endGame() {
 //Reset button
 
 const resetBtn = document.getElementById('reset');
-resetBtn.addEventListener('click', () => resetGame);
+resetBtn.addEventListener('click', resetGame);
 
 function resetGame() {
-    winner = "";
-    infoResult = "";
+    document.getElementById('winner').innerHTML = "";
+    document.getElementById("winner").style.color = "white";
     playerScore = 0;
+    document.getElementById("player-score").innerHTML = 'Score = ' + playerScore;
     computerScore = 0;
+    document.getElementById("computer-score").innerHTML = 'Score = ' + computerScore;
+    document.getElementById('message').innerHTML = "Here we go again " + userName + "!";
+    document.getElementById("user-img").src = "./user-img/Cartman.png";
 }
 
 //Doc style
