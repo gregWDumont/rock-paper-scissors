@@ -64,7 +64,6 @@ function playRound(playerSelection, computerSelection)
         }
         else if (
             (playerSelection == 'rock') && (computerSelection == 'paper') ||
-            (playerSelection == 'paper') && (computerSelection == 'scissors') ||
             (playerSelection == 'scissors') && (computerSelection == 'rock')
             ) {
                 computerScore++;
@@ -73,14 +72,27 @@ function playRound(playerSelection, computerSelection)
                 document.getElementById("winner").style.color = "red";
                 document.getElementById("user-img").src = "./user-img/Cartman-loses-Fit2.png";
                 }
+        else if ((playerSelection == 'paper') && (computerSelection == 'scissors')) {
+            computerScore++;
+            winner = 'Computer wins';
+            infoResult = 'You lose, ' + computerSelection + ' beat ' + playerSelection;
+            document.getElementById("winner").style.color = "red";
+            document.getElementById("user-img").src = "./user-img/Cartman-loses-Fit2.png";
+        }
         else if (
             (playerSelection == 'paper') && (computerSelection == 'rock') ||
-            (playerSelection == 'rock') && (computerSelection == 'scissors') ||
-            (playerSelection == 'scissors') && (computerSelection == 'paper')
+            (playerSelection == 'rock') && (computerSelection == 'scissors')
         ) {
             playerScore++;
             winner = userName + ' wins';
             infoResult = 'You win, ' + playerSelection + ' beats ' + computerSelection;
+            document.getElementById("winner").style.color = "green";
+            document.getElementById("user-img").src = "./user-img/Cartman-wins-Fit2.png"
+        }
+        else if ((playerSelection == 'scissors') && (computerSelection == 'paper')) {
+            playerScore++;
+            winner = userName + ' wins';
+            infoResult = 'You win, ' + playerSelection + ' beat ' + computerSelection;
             document.getElementById("winner").style.color = "green";
             document.getElementById("user-img").src = "./user-img/Cartman-wins-Fit2.png"
         };
