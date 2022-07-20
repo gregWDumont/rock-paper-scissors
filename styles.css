@@ -135,3 +135,14 @@ footer {
     background-color: #fdd463;
     box-shadow: 5px 7px 8px #f86006;
 }
+
+.reset {
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 20px;
+    width: 400px;
+    height: 320px;
+    text-align: center;
+}
