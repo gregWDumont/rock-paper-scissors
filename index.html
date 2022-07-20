@@ -10,61 +10,63 @@
 </head>
 
 <body>
-    <div class="promptName"></div>
-    <div class="text-banner">
-        <h1>Rock Paper Scissors</h1>
-        <h2>Click and play!</h2>
-        <h1 id="winner"></h1>
-        <h2 id="message"></h2>
-    </div>
- <!-- player info and buttons selection -->
-    <div class="gamecontainer">
+    <div class="megaCont">
+        <div class="promptName"></div>
+        <div class="text-banner">
+            <h1>Rock Paper Scissors</h1>
+            <h2>Click and play!</h2>
+            <h1 id="winner"></h1>
+            <h2 id="message"></h2>
+        </div>
+         <!-- player info and buttons selection -->
+        <div class="gamecontainer">
+                <div class="playercontainer">
+                    <div id="playerinfo">
+                        <div id="player-name">Player</div>
+                        <img class="playerimg" src="./user-img/Cartman.png" alt="player picture" id="user-img"/>
+                        <div id="player-score">Score = 0</div>
+                    </div>
+                    <div class="choices">
+                        <button class="weapon rock" id="rock">
+                            <p id="rock">Rock</p>
+                            <img id="rock" src="./Weapons/rock.png" alt="Rock Hand"/>
+                        </button>
+                        <button class="weapon paper" id="paper">
+                            <p>Paper</p>
+                            <img src="./Weapons/paper.png" alt="Paper Hand"/>
+                        </button>
+                        <button class="weapon scissors" id="scissors">
+                            <p>Scissors</p>
+                            <img src="./Weapons/scissors.png" alt="Scissors Hand"/>
+                        </button>
+                    </div>
+                </div>
+        
+        <!-- computer info and buttons img -->
             <div class="playercontainer">
-                <div id="playerinfo">
-                    <div id="player-name">Player</div>
-                    <img class="playerimg" src="./user-img/Cartman.png" alt="player picture" id="user-img"/>
-                    <div id="player-score">Score = 0</div>
+                <div id="computer-info">
+                    <div id="computer-name">Computer</div>
+                    <img class="playerimg" src="./computer-img.png" alt="player picture"/>
+                    <div id="computer-score">Score = 0</div>
                 </div>
                 <div class="choices">
-                    <button class="weapon rock" id="rock">
-                        <p id="rock">Rock</p>
-                        <img id="rock" src="./Weapons/rock.png" alt="Rock Hand"/>
+                    <button class="weapon rock">
+                        <p>Rock</p>
+                        <img src="./Weapons/rock.png"/>
                     </button>
-                    <button class="weapon paper" id="paper">
+                    <button class="weapon paper">
                         <p>Paper</p>
-                        <img src="./Weapons/paper.png" alt="Paper Hand"/>
+                        <img  src="./Weapons/paper.png" alt="Paper Hand"/>
                     </button>
-                    <button class="weapon scissors" id="scissors">
+                    <button  class="weapon scissors">
                         <p>Scissors</p>
-                        <img src="./Weapons/scissors.png" alt="Scissors Hand"/>
+                        <img src="./Weapons/scissors.png" />
                     </button>
                 </div>
-            </div>
-
-<!-- computer info and buttons img -->
-        <div class="playercontainer">
-            <div id="computer-info">
-                <div id="computer-name">Computer</div>
-                <img class="playerimg" src="./computer-img.png" alt="player picture"/>
-                <div id="computer-score">Score = 0</div>
-            </div>
-            <div class="choices">
-                <button class="weapon rock">
-                    <p>Rock</p>
-                    <img src="./Weapons/rock.png"/>
-                </button>
-                <button class="weapon paper">
-                    <p>Paper</p>
-                    <img  src="./Weapons/paper.png" alt="Paper Hand"/>
-                </button>
-                <button  class="weapon scissors">
-                    <p>Scissors</p>
-                    <img src="./Weapons/scissors.png" />
-                </button>
             </div>
         </div>
     </div>
-    <button type="button" onclick="resetGame" id="reset">RESET GAME</button>
+    <div class="resetCont"><button type="button" onclick="resetGame" id="reset">RESET GAME</button></div>
     <script src="script.js" ></script> 
 </body>
 <footer>
