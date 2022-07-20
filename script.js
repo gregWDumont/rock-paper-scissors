@@ -60,6 +60,7 @@ function playRound(playerSelection, computerSelection)
                 winner = 'Nobody wins';
                 infoResult = "It's a tie";
                 document.getElementById("winner").style.color = "white";
+                document.getElementById("user-img").src = "./user-img/Cartman.png";
         }
         else if (
             (playerSelection == 'rock') && (computerSelection == 'paper') ||
@@ -103,6 +104,18 @@ function endGame() {
         document.getElementById('winner').innerHTML = ' The computer wins the game'
     }
   }
+
+//Reset button
+
+const resetBtn = document.getElementById('reset');
+resetBtn.addEventListener('click', () => resetGame);
+
+function resetGame() {
+    winner = "";
+    infoResult = "";
+    playerScore = 0;
+    computerScore = 0;
+}
 
 //Doc style
 
