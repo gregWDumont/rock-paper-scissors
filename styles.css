@@ -1,5 +1,5 @@
 * {
-    font-family: "Bebas Neue";
+    font-family: "ArcadeClassic";
 }
 
 body {
@@ -35,6 +35,7 @@ footer {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px #6699CC;
 }
 
 .text-banner h1 {
@@ -42,11 +43,12 @@ footer {
     font-size: 50px;
     text-align: center;
     text-shadow: 3px 3px #6699CC;
-    font-family: "More than human";
+    /*font-family: "More than human";*/
 }
 
 .text-banner h2 {
     font-size: 30px;
+    text-shadow: 3px 3px #6699CC;
 }
 
 .gamecontainer {
@@ -151,9 +153,7 @@ footer {
     border-radius: 10px;
     color: white;
     font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
-    font-weight: bold;
     margin: 10px;
     padding: 10px;
 
