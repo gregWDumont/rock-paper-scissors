@@ -1,5 +1,5 @@
 * {
-    font-family: "Bebas Neue";
+    font-family: "ArcadeClassic";
 }
 
 body {
@@ -42,7 +42,7 @@ footer {
     font-size: 50px;
     text-align: center;
     text-shadow: 3px 3px #6699CC;
-    font-family: "More than human";
+    /*font-family: "More than human";*/
 }
 
 .text-banner h2 {
@@ -151,9 +151,7 @@ footer {
     border-radius: 10px;
     color: white;
     font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
-    font-weight: bold;
     margin: 10px;
     padding: 10px;
 
