@@ -3,10 +3,15 @@
     --text-shdw: 3px 3px #6699CC;
 }
 
-@import url('http://fonts.cdnfonts.com/css/arcade-classic');
-
 * {
-    font-family: 'ArcadeClassic', sans-serif;
+    font-family: "ArcadeClassic";
+}
+
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
 }
 
 body {
@@ -14,7 +19,9 @@ body {
         color: white;
         background-image: url(./img/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg);
         background-repeat: no-repeat;
-        background-size: 100%;}
+        background-size: 100%;
+}
+
 
 footer {
     margin: 4vw 20%;
