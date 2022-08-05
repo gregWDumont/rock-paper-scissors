@@ -3,8 +3,10 @@
     --text-shdw: 3px 3px #6699CC;
 }
 
+@import url('http://fonts.cdnfonts.com/css/arcade-classic');
+
 * {
-    font-family: "ArcadeClassic";
+    font-family: 'ArcadeClassic', sans-serif;
 }
 
 body {
