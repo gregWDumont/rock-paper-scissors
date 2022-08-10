@@ -1,6 +1,6 @@
 :root {
-    --color-txt: white;
-    --text-shdw: 3px 3px #6699CC;
+    --color-txt: #ffffff;
+    --text-shdw: 0.5vw 0.5vw #6699CC;
 }
 
 * {
@@ -22,37 +22,21 @@ body {
         background-size: 100%;
 }
 
-
-footer {
-    margin: 4vw 20%;
-    padding: 8vw auto;
-    border-radius: 2vw;
-    background-color: black;
-    text-align: center;
-}
-
-.weapon p {
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--color-txt);
-}
-
 .megaCont {
-    margin: 0 20%;
+    margin: 0 10vw;
 }
 
 .text-banner {
     text-align: center;
     background-color: rgb(23, 205, 241);
-    padding: 2vw;
+    padding: 1vw;
     border-radius: 2vw;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     text-shadow: var(--text-shdw);
 }
 
 .text-banner h1 {
-    margin: 2vw 15%;
-    font-size: 4rem;
+    margin: 2vw 5vw;
+    font-size: 5vw;
     text-align: center;
     text-shadow: var(--text-shdw);
 }
@@ -64,7 +48,7 @@ footer {
 
 .gamecontainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
@@ -79,12 +63,11 @@ footer {
 .playercontainer {
     background-color: rgb(187, 46, 252);    
     border-radius: 2vw;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
     font-weight: bold;
-    margin: 20px 0;
-    width: min(400px, 40vw);
-    height: min(250px, 30vw);
+    margin: 5vw 0;
+    width: 80vw;
+    height: 50vw;
     text-align: center;
     padding-top: 5px;
 }
@@ -96,9 +79,9 @@ footer {
 }
 
 .playerimg {
-    margin: 5px;
-    height: min(50px, 8vw);
-    width: min(50px, 8vw);
+    margin: 1vw;
+    height: 15vw;
+    width: 15vw;
 }
     
 .playerh1 {
@@ -115,42 +98,48 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: var(--color-txt);
     border-radius: 10px;
-    width: min(120px, 16vw);
-    height: min(120px, 16vw);
+    width: 20vw;
+    height: 20vw;
     margin: 2vw;
-    border-radius: 3px;
-    box-shadow: 4px 5px 0px black;
-    border-bottom: 2px solid;
+    border-bottom: 1vw solid;
     border-right: 1px solid;
     transform: translate(-1%, -3%);
+    transition: all 0.6s ease;
+}
+
+.weapon p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color-txt);
 }
 
 .weapon {
-    display: flex;
-    flex: auto;
     border: 5px solid #000000;
     border-radius: 4vw;
-    margin: 1rem;
     transition: all 0.6s ease;
 }
 
 .weapon img {
-    width: 50px;
+    width: 7vw;
 }
 
 .rock {
+    margin: 1vw;
     background-color: #f6c7e8;
     box-shadow: 5px 7px 8px #ca6bbb;
 }
 
 .paper {
+    margin: 1vw;
     background-color: #ace2e2;
     box-shadow: 5px 7px 8px #7ad0dc;
 }
 
 .scissors {
+    margin: 1vw;
     background-color: #fdd463;
     box-shadow: 5px 7px 8px #f86006;
 }
@@ -173,3 +162,12 @@ footer {
 .footer {
     padding: 10px;
 }
+
+footer {
+    margin: 4vw 20%;
+    padding: 8vw auto;
+    border-radius: 2vw;
+    background-color: black;
+    text-align: center;
+}
+

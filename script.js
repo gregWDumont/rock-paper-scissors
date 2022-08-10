@@ -139,10 +139,9 @@ const style = document.createElement('style');
 style.innerHTML = `
 
     #user-img {
-        margin: 5px;
-        height: 50px;
-        width: 50px;
-        
+        margin: 1vw;
+        height: 15vw;
+        width: 15vw;
     }
     
     #rock:hover, #paper:hover, #scissors:hover{
@@ -151,7 +150,7 @@ style.innerHTML = `
       }
 
     #winner {
-        text-shadow: 4px 5px 0px black;
+        text-shadow: 0.2vw 0.5vw 0px black;
     }
     `;
 document.head.appendChild(style);
