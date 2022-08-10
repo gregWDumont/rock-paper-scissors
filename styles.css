@@ -124,6 +124,12 @@ body {
 
 .weapon img {
     width: 7vw;
+    margin: 1vw;
+    padding: 1vw;
+}
+
+.weapon p {
+    margin: 0;
 }
 
 .rock {
