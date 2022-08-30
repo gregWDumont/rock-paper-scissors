@@ -60,7 +60,7 @@ function playRound(playerSelection, computerSelection)
                 winner = 'Nobody wins';
                 infoResult = "It's a tie";
                 document.getElementById("winner").style.color = "white";
-                document.getElementById("user-img").src = "./user-img/Cartman.png";
+                document.getElementById("user-img").src = "./img/user-img/Cartman.png";
         }
         else if (
             (playerSelection == 'rock') && (computerSelection == 'paper') ||
@@ -70,14 +70,14 @@ function playRound(playerSelection, computerSelection)
                 winner = 'Computer wins';
                 infoResult = 'You lose, ' + computerSelection + ' beats ' + playerSelection;
                 document.getElementById("winner").style.color = "red";
-                document.getElementById("user-img").src = "./user-img/Cartman-loses-Fit2.png";
+                document.getElementById("user-img").src = "./img/user-img/Cartman-loses-Fit2.png";
                 }
         else if ((playerSelection == 'paper') && (computerSelection == 'scissors')) {
             computerScore++;
             winner = 'Computer wins';
             infoResult = 'You lose, ' + computerSelection + ' beat ' + playerSelection;
             document.getElementById("winner").style.color = "red";
-            document.getElementById("user-img").src = "./user-img/Cartman-loses-Fit2.png";
+            document.getElementById("user-img").src = "./img/user-img/Cartman-loses-Fit2.png";
         }
         else if (
             (playerSelection == 'paper') && (computerSelection == 'rock') ||
@@ -87,14 +87,14 @@ function playRound(playerSelection, computerSelection)
             winner = userName + ' wins';
             infoResult = 'You win, ' + playerSelection + ' beats ' + computerSelection;
             document.getElementById("winner").style.color = "green";
-            document.getElementById("user-img").src = "./user-img/Cartman-wins-Fit2.png"
+            document.getElementById("user-img").src = "./img/user-img/Cartman-wins-Fit2.png"
         }
         else if ((playerSelection == 'scissors') && (computerSelection == 'paper')) {
             playerScore++;
             winner = userName + ' wins';
             infoResult = 'You win, ' + playerSelection + ' beat ' + computerSelection;
             document.getElementById("winner").style.color = "green";
-            document.getElementById("user-img").src = "./user-img/Cartman-wins-Fit2.png"
+            document.getElementById("user-img").src = "./img/user-img/Cartman-wins-Fit2.png"
         };
         document.getElementById('winner').innerHTML = winner;
         document.getElementById('message').innerHTML = infoResult;
@@ -130,7 +130,7 @@ function resetGame() {
     computerScore = 0;
     document.getElementById("computer-score").innerHTML = 'Score = ' + computerScore;
     document.getElementById('message').innerHTML = "Here we go again " + userName + "!";
-    document.getElementById("user-img").src = "./user-img/Cartman.png";
+    document.getElementById("user-img").src = "./img/user-img/Cartman.png";
 }
 
 //Doc style
@@ -139,10 +139,9 @@ const style = document.createElement('style');
 style.innerHTML = `
 
     #user-img {
-        margin: 5px;
-        height: 50px;
-        width: 50px;
-        
+        margin: 1vw;
+        height: 15vw;
+        width: 15vw;
     }
     
     #rock:hover, #paper:hover, #scissors:hover{
@@ -151,7 +150,7 @@ style.innerHTML = `
       }
 
     #winner {
-        text-shadow: 4px 5px 0px black;
+        text-shadow: 0.2vw 0.5vw 0px black;
     }
     `;
 document.head.appendChild(style);
