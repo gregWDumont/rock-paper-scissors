@@ -132,25 +132,3 @@ function resetGame() {
     document.getElementById('message').innerHTML = "Here we go again " + userName + "!";
     document.getElementById("user-img").src = "./img/user-img/Cartman.png";
 }
-
-//Doc style
-
-const style = document.createElement('style');
-style.innerHTML = `
-
-    #user-img {
-        margin: 1vw;
-        height: 15vw;
-        width: 15vw;
-    }
-    
-    #rock:hover, #paper:hover, #scissors:hover{
-        background-color: white;
-        cursor: pointer;
-      }
-
-    #winner {
-        text-shadow: 0.2vw 0.5vw 0px black;
-    }
-    `;
-document.head.appendChild(style);
