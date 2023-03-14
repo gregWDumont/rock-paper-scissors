@@ -196,6 +196,15 @@ footer {
 }
 
 @media screen and (min-width: 500px) {
+
+	.text-banner {
+		text-align: center;
+		background-color: rgb(23, 205, 241);
+		padding: 0x;
+		border-radius: 2vw;
+		text-shadow: var(--text-shdw);
+	}
+
 	.text-banner h1 {
 		margin: 20px 50px;
 		font-size: 60px;
@@ -252,6 +261,12 @@ footer {
 		width: 70px;
 		margin: 10px;
 		padding: 10px;
+	}
+
+	.resetCont {
+		text-align: center;
+		padding: 0;
+		margin: 0;
 	}
 
 	footer {
