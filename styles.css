@@ -84,6 +84,21 @@ body {
     height: 15vw;
     width: 15vw;
 }
+
+#user-img {
+	margin: 1vw;
+	height: 15vw;
+	width: 15vw;
+}
+
+#rock:hover, #paper:hover, #scissors:hover{
+	background-color: white;
+	cursor: pointer;
+  }
+
+#winner {
+	text-shadow: 0.2vw 0.5vw 0px black;
+}
     
 .playerh1 {
     text-align: center;
@@ -100,10 +115,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-txt);
-    border-radius: 10px;
-    width: 20vw;
+	width: 20vw;
     height: 20vw;
+    background-color: var(--color-txt);
+    border-radius: 30px;
+	border: 5px solid #000000;
+    transition: all 0.6s ease;
     margin: 2vw;
     border-bottom: 1vw solid;
     border-right: 1px solid;
@@ -119,7 +136,7 @@ body {
 
 .weapon {
     border: 5px solid #000000;
-    border-radius: 4vw;
+    border-radius: 30px;
     transition: all 0.6s ease;
 }
 
@@ -178,3 +195,70 @@ footer {
     text-align: center;
 }
 
+@media screen and (min-width: 500px) {
+	.text-banner h1 {
+		margin: 20px 50px;
+		font-size: 60px;
+		text-align: center;
+		text-shadow: var(--text-shdw);
+	}
+
+	.gamecontainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+	}
+
+	.playercontainer {
+		background-color: rgb(187, 46, 252);    
+		border-radius: 2vw;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin: 20px 0;
+		width: 500px;
+		height: 400px;
+		text-align: center;
+		padding-top: 5px;
+	}
+
+	#user-img {
+		margin: 1vw;
+		height: 150px;
+		width: 150px;
+	}
+
+	.playerimg {
+		margin: 10px;
+		height: 150px;
+		width: 150px;
+	}
+
+	.weapon {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 150px;
+		height: 150px;
+		border-radius: 30px;
+		border: 5px solid #000000;
+		transition: all 0.6s ease;
+		margin: 10px;
+	}
+
+	.weapon img {
+		width: 70px;
+		margin: 10px;
+		padding: 10px;
+	}
+
+	footer {
+		margin: 30px 5vw;
+		padding: 30px auto;
+		border-radius: 2vw;
+		background-color: black;
+		text-align: center;
+	}
+}
